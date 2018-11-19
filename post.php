@@ -19,12 +19,12 @@ if (!is_null($referer)){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mastoshare</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.dark.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.dark.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <div class="container">
-    <a href="https://cdn.weep.me/mastoshare/"><img src="img/mastoshare.png" class="img-fluid"></a>
+    <a href="/"><img src="/img/mastoshare.png" class="img-fluid"></a>
     <div id="error"></div>
     <div class="card">
         <div class="card-body">
