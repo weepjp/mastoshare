@@ -24,7 +24,7 @@ if (!is_null($referer)){
 </head>
 
 <div class="container">
-    <a href="https://mastoshare.net"><img src="img/mastoshare.png" class="img-fluid"></a>
+    <a href="https://cdn.weep.me/mastoshare/"><img src="img/mastoshare.png" class="img-fluid"></a>
     <div id="error"></div>
     <div class="card">
         <div class="card-body">
@@ -52,7 +52,7 @@ if (!is_null($referer)){
     <button id="del" class="btn btn-danger">リスト全削除</button>
 
 </div>
-<script src="js/main.js"></script>
+<script src="js/main.php"></script>
 </body>
 
 </html>

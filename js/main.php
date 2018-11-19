@@ -1,7 +1,41 @@
-console.log("Mastoshare Ver 2.0.0 alpha!");
+<?php
+
+header("Content-Type: text/javascript");
+
+?>console.log("Mastoshare Ver 2.0.0 alpha!");
 load();
 function load() {
+    
+    
+<?php
+
+$dat = '/home/vip/set.txt';//#InstanceTicker 用のデータを読みこんで流用っつう。
+$set = file($dat);
+$con = 'var an = "';
+
+$n = 1;
+
+for($i = 1; $i < count($set); $i++){
+
+    $sex = explode("\t", $set[$i]);
+    
+    if($sex[0]==1 || $sex[0]==2){
+          
+          $con .= '<option value=\"'.$sex[2].'\">'.$sex[2].'</option>';
+          
+          
+    }
+
+    
+}
+/*
     var an = "<option value=\"mstdn.jp\">mstdn.jp</option><option value=\"friends.nico\">friends.nico</option><option value=\"pawoo.net\">pawoo.net</option>";
+*/
+    $con .= '";';
+    
+?><?=$con?>
+    
+    
     for (var i = 0, length = localStorage.length; i < length; ++i) {
         an += "<option value='" + localStorage[i] + "'>" + localStorage[i] + "</option>";
     }
