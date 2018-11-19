@@ -1,5 +1,6 @@
 <?php
 
+
 header("Content-Type: text/javascript");
 
 ?>console.log("Mastoshare Ver 2.0.0 alpha!");
