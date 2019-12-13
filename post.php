@@ -21,6 +21,10 @@ if (!is_null($referer)){
            
                case 'shindanmaker.com':
                case 'vip.stars.ne.jp':
+               case 'wee.jp':
+               case 'cdn.weep.me':
+               case 'weep.me':
+               case 'weep.jp':
                          $text = $get."\n#Mastoshare";
                break;
                
@@ -38,17 +42,19 @@ if (!is_null($referer)){
 ?>
 <!doctype html>
 <html lang="ja">
-
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mastoshare</title>
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.dark.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.dark.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <div class="container">
-    <a href="/"><img src="/img/mastoshare.png" class="img-fluid"></a>
+    <a href="./"><img src="./img/mastoshare.png" class="img-fluid"></a>
     <div id="error"></div>
     <div class="card">
         <div class="card-body">
@@ -65,9 +71,9 @@ if (!is_null($referer)){
         </div>
     </div>
     <h4>インスタンスリスト</h4>
-    <p>（<a href="https://cdn.weep.me/mastodon/#list" target="_blank">ここのリスト</a>を出してます）</p>
+    <p><a href="https://wee.jp/instance/" target="_blank">インスタンスリスト</a>を使ってます。。。</p>
     <div class="form-group">
-        <select class="form-control" id="instance" name="instance" size="5" required>
+        <select class="form-control" id="instance" name="instance" size="12" required>
         </select>
     </div>
     <div class="form-group">
@@ -79,5 +85,4 @@ if (!is_null($referer)){
 </div>
 <script src="js/main.php"></script>
 </body>
-
 </html>
