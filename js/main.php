@@ -1,6 +1,5 @@
 <?php
 
-
 header("Content-Type: text/javascript");
 
 ?>console.log("Mastoshare Ver 2.0.0 alpha!");
@@ -9,25 +8,21 @@ function load() {
     
     
 <?php
-
-$dat = '/home/vip/set.txt';//#InstanceTicker 用のデータを読みこんで流用っつう。
+$dat = './set.cgi';//データファイル先。
 $set = file($dat);
 $con = 'var an = "';
 
 $n = 1;
 
 for($i = 1; $i < count($set); $i++){
-
     $sex = explode("\t", $set[$i]);
-    
-    if($sex[0]==1 || $sex[0]==2){
-          
-          $con .= '<option value=\"'.$sex[2].'\">'.$sex[2].'</option>';
-          
-          
+    if($sex[0]==1 || $sex[0]==2 || $sex[0]==4){ 
+       if($sex[1]=='閉鎖' or $sex[2]=='' ){    
+       }else{
+         $con .= '<option value=\"'.$sex[2].'\">'.$sex[2].'</option>';
+       }    
+    }else{
     }
-
-    
 }
 /*
     var an = "<option value=\"mstdn.jp\">mstdn.jp</option><option value=\"friends.nico\">friends.nico</option><option value=\"pawoo.net\">pawoo.net</option>";
@@ -36,10 +31,11 @@ for($i = 1; $i < count($set); $i++){
     
 ?><?=$con?>
     
-    
     for (var i = 0, length = localStorage.length; i < length; ++i) {
-        an += "<option value='" + localStorage[i] + "'>" + localStorage[i] + "</option>";
+        	an += "<option value='" + localStorage[i] + "'>" + localStorage[i] + "</option>";
     }
+    
+    
     document.getElementById('instance').innerHTML = an;
 }
 function check(_url) {
