@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mastoshare</title>
     <meta name="description" content="Mastoshare(マストシェア)とはTwitter共有ボタンのようなMastodon共有ボタンです。簡単に設置が出来ます。">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.dark.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/top.css">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.ico" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.dark.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/top.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 <div class="container-fluid">
     <div class="mx-auto" style="max-width: 100%; width: 800px;">
-        <a href="/"><img src="/img/mastoshare.png" class="mx-auto d-block top-logo"></a>
+        <a href="./"><img src="./img/mastoshare.png" class="mx-auto d-block top-logo"></a>
         <p class="text-intro text-center">Mastoshare(マストシェア)はMastodon版のTwitterシェアボタンです。</p>
         <p class="text-intro text-center"><strong>誰でも簡単に利用ができます。</strong></p>
         <p class="text-center">
-            <a href="/post.php?text=" onclick="window.open(this.href, '', 'width=512,height=640'); return false;"><img src="/img/toot.svg" width="75" height="20"></a>
+            <a href="./post.php?text=" onclick="window.open(this.href, '', 'width=512,height=640'); return false;"><img src="./img/toot.svg" width="75" height="20"></a>
         </p>
         <p class="text-center">
-            <a class="btn text-white" href="/post.php?text=" style="background-color: #2b90d9;" onclick="window.open(this.href, '', 'width=512,height=640'); return false;"><i class="fab fa-mastodon fa-fw"></i> トゥート!</a>
+            <a class="btn text-white" href="./post.php?text=" style="background-color: #2b90d9;" onclick="window.open(this.href, '', 'width=512,height=640'); return false;"><i class="fab fa-mastodon fa-fw"></i> トゥート!</a>
         </p>
         <div class="row">
             <div class="col-md-6 col-sm-6">
@@ -62,10 +64,10 @@
                 </ul>
             </div>
             <div class="col-md-6 col-sm-6">
-                <h4>当サイト（cdn.weep.me）運営</h4>
+                <h4>設置者： weep 運営</h4>
                 <ul>
-                    <li><a href="https://weep.me/@weep">weep.me</a></li>
-                    <li><a href="https://github.com/weepjp/mastoshare">GitHub で Fork して改造して使ってます。</a></li>
+                    <li><a href="https://weep.jp/fed">weep</a></li>
+                    <li><a href="https://github.com/weepjp/mastoshare">ここは GitHub で Fork して改造して使ってます。</a></li>
                 </ul>
             </div>
         </div>
