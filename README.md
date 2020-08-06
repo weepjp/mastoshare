@@ -1,13 +1,13 @@
 # mastoshare
 
-[ここで改造して](https://wee.jp/share/)使ってます。。。
+[ここで改造して](https://miy.pw/share/)使ってます。。。
 
 
 ## 改造した箇所
 
 - こっちのサーバーの構成にあうように微調整。(2018/11)
 
-- [#InstanceTicker](https://github.com/weepjp/InstanceTicker) で使ってる [Mastodon インスタンスリスト](https://wee.jp/instance/)のデータを流用させた。(2018/11)
+- [#InstanceTicker](https://github.com/weepjp/InstanceTicker) で使ってる [Mastodon インスタンスリスト](https://miy.pw/instance/)のデータを流用させた。(2018/11)
 
 - インスタンス追加項目の変更（ユーザー設定と記載）。(2018/11)
 
@@ -16,3 +16,5 @@
 - またもや、設置場所を変更。(2019/02/24)
 
 - またもや、設置場所を変更。(2019/12/13)
+
+- またもや、設置場所を変更。(2019/08/06)
